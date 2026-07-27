@@ -13,9 +13,12 @@ function App() {
     name: "Om Kumar Gupta",
     tag: "Software Developer",      
     shortBio: "i am a enthuzatic developer can full fill all",  
-    fullBio: "i am a enthuzatic developer can full fill all requirements of the clint in the websight can intergrate AI services",          
+    fullBio: "i am a enthuzatic developer can full fill all requirements of the clint in the websight can intergrate AI services   i am a enthuzatic developer can full fill all requirements of the clint in the websight can intergrate AI services   i am a enthuzatic developer can full fill all requirements of the clint in the websight can intergrate AI services ",          
     skills: [    
-        { title: "tech Skills", items: ["Graphic designing", " frontend development"] },  
+        {title:"Graphic designing",decp:"i am a good grapic designer expert in all type of desing softwate as well as printing work"},
+        {title:"frontend development",decp:"i am a exellent ui designer with extra ordinary skill because i am also a grapic designer i have god designing skills"},
+        {title:"java",decp:"i have good problem solving skills and good concrpt of oops in java"},
+        {title:"c++" ,decp:"same as java"} 
     ],
     projects: [    
         { title: "...", bio: "...", tags: ["...", "..."] },  
@@ -28,11 +31,11 @@ function App() {
       },
       {
         path:"/about",
-        element:<About/>
+        element:<About detail={detail}/>
       },
       {
         path:"/contact",
-        element:<Contact/>
+        element:<Contact detail={detail}/>
       }
     ]
   )
