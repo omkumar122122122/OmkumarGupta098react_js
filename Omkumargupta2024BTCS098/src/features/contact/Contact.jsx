@@ -1,26 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import Nav from '../../shared/components/Nav'
 
-const Contact = () => {
-    const [name,setname]=usestate("");
+const Contact = ({detail}) => {
+    const [name,setname]=usestate("")
     const [email,setemai]=usestate("")
-    const [pno,setpno]=usestate("");
+    const [pno,setpno]=usestate("")
     const [show,setshow]=usestate(false)
-    const greet={
-        pname:"",
-        pemail:"",
-        ppno:""
-        
-    }
+    const [pname,setpname]=useState("")
 
     function handelclick(e){
-        greet.pname=name;
-        greet.pemail=email;
-        greet.ppno=pno;
+        setpname(name);
 
         setemai("")
         setname("")
         setpno("")
+        setshow(true)
 
 
         
@@ -37,6 +32,7 @@ const Contact = () => {
 
             <button type="submit" >sent</button>
         </form>
+        {show?<p>hlo {greet.pname} youre email have been sent succes fully <br /> {detail.name} will contact you soon</p>:<p></p>}
         
         
         </div>
