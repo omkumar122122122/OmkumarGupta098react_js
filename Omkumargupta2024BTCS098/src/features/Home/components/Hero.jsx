@@ -1,9 +1,10 @@
 import React from 'react'
 import Mypic from './Mypic.png'
+import './hero.css'
 
 const Hero = (props) => {
   return (
-    <div>
+    <div className='maindiv'>
         <div className='detail'>
         <h1>WELCOME</h1>
         <h2>I am {props.name}</h2>
