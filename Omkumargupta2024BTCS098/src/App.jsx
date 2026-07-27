@@ -21,7 +21,9 @@ function App() {
         {title:"c++" ,decp:"same as java"} 
     ],
     projects: [    
-        { title: "...", bio: "...", tags: ["...", "..."] },  
+        { title: "my portfolio", bio: "i had created it by my self ", tags: ["html","css","js"] },  
+        { title: "my portfolio2", bio: "i had created it by my self2 ", tags: ["html2","css2","js2"] },  
+        { title: "my portfolio3", bio: "i had created it by my self3 ", tags: ["ht3ml","cs3s","js3"] },  
     ],
 }
   const route=createBrowserRouter(
