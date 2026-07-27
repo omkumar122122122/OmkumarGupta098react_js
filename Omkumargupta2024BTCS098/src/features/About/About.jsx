@@ -15,6 +15,7 @@ const About = ({detail}) => {
 
         
             <div className="skill">
+                <h1>my skills</h1>
             {
             detail.skills.map(skill=>
 
